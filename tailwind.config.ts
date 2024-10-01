@@ -1,3 +1,4 @@
+import { access } from "fs";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,9 +9,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: "15px",
+      },
+
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        accent: "#FF8F9C",
+        dark: "#1B1B1B",
       },
     },
   },
